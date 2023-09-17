@@ -25,3 +25,6 @@ Route::group(['prefix' => 'admin'], function () {
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/posts', [App\Http\Controllers\PostController::class, 'all'])->name('posts');
+Route::get('/post/{id}', [App\Http\Controllers\PostController::class, 'one'])->name('post');
+Route::get('/contacts', [App\Http\Controllers\IndexController::class, 'contacts'])->name('contacts');
