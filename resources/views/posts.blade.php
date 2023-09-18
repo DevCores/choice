@@ -1,10 +1,14 @@
 @extends('layouts.app')
+@section('title', setting('site.title'))
+@section('description', setting('site.description'))
+@section('keywords', setting('site.keywords'))
+@section('content')
 <div class="banner-fixed-height">
       <div class="container absolute w-container"></div>
       <div data-animation="default" class="navbar w-nav" data-easing2="ease" data-easing="ease" data-collapse="medium" data-w-id="ab3d6dd9-2604-1cb1-fff6-edda379048ae" role="banner" data-no-scroll="1" data-duration="400" data-doc-height="1">
         <div class="container flex w-container">
           <div class="main">
-            <a href="{{route('index')}}" class="brand-first w-nav-brand"><img src="https://uploads-ssl.webflow.com/5f7ea94782a7b99c39f34980/5f7f0298739c0dd1f82397e3_choice_white.png" loading="lazy" width="130" alt="" srcset="https://uploads-ssl.webflow.com/5f7ea94782a7b99c39f34980/5f7f0298739c0dd1f82397e3_choice_white-p-500.png 500w, https://uploads-ssl.webflow.com/5f7ea94782a7b99c39f34980/5f7f0298739c0dd1f82397e3_choice_white-p-800.png 800w, https://uploads-ssl.webflow.com/5f7ea94782a7b99c39f34980/5f7f0298739c0dd1f82397e3_choice_white-p-1080.png 1080w, https://uploads-ssl.webflow.com/5f7ea94782a7b99c39f34980/5f7f0298739c0dd1f82397e3_choice_white-p-1600.png 1600w, https://uploads-ssl.webflow.com/5f7ea94782a7b99c39f34980/5f7f0298739c0dd1f82397e3_choice_white-p-2000.png 2000w, https://uploads-ssl.webflow.com/5f7ea94782a7b99c39f34980/5f7f0298739c0dd1f82397e3_choice_white.png 2712w" sizes="(max-width: 479px) 37vw, (max-width: 767px) 104px, 130px" class="image-101" /></a>
+            <a href="{{route('index')}}" class="brand-first w-nav-brand"><img src="/storage/{{setting('site.logo')}}" loading="lazy" width="130" alt="" class="image-101" /></a>
             <nav role="navigation" class="nav-menu w-nav-menu">
             	{{menu('main','menu.main')}}
             </nav>
@@ -53,3 +57,4 @@
         </div>
       </div>
     </div>
+@endsection

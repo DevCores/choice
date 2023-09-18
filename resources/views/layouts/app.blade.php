@@ -3,10 +3,12 @@
 
 <head>
   <meta charset="utf-8" />
-  <title>{{ config('app.name', 'Laravel') }}</title>
+  <title>{{ config('app.name', 'Laravel') }} - @yield('title')</title>
   <meta content="width=device-width, initial-scale=1" name="viewport" />
   <meta content="Webflow" name="generator" />
   <meta name="csrf-token" content="{{ csrf_token() }}">
+  <meta name="description" content="@yield('description')">
+  <meta name="keywords" content="@yield('keywords')">
   <link href="{{asset('css/style.css')}}" rel="stylesheet" type="text/css" />
   <link href="https://fonts.googleapis.com" rel="preconnect" />
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous" />
@@ -41,54 +43,23 @@
             </p>
           </div>
           <div>
-            <h3 class="footer-title">Menu</h3>
+            <h3 class="footer-title">Меню</h3>
             <div class="top-margin more verical">
-              <a href="{{route('index')}}" aria-current="page" class="navlink w-inline-block w--current">
-                <div class="nav-text-footer">Wat is Choice?</div>
-              </a>
-              <a href="crowdfunding.html" class="navlink w-inline-block">
-                <div class="nav-text-footer">Crowdfunding</div>
-              </a>
-              <a href="corporate-investor-relations.html" class="navlink w-inline-block">
-                <div class="nav-text-footer"><strong>Corporate &amp; Investor relations<br/></strong></div>
-              </a>
-              <a href="contacteer-ons.html" class="navlink w-inline-block">
-                <div class="nav-text-footer"><strong>Contact<br/></strong></div>
-              </a>
+              {{menu('footermenu','menu.footer')}}
             </div>
           </div>
           <div>
             <div>
-              <h3 class="footer-title">Tools<br/></h3></div>
+              <h3 class="footer-title">Инструменты<br/></h3></div>
             <div class="top-margin more verical">
-              <a href="http://my.choice.be/" target="_blank" class="navlink w-inline-block">
-                <div class="nav-text-footer">Login</div>
-              </a>
-              <a href="http://my.choice.be/publiekeplaatsing" class="navlink w-inline-block">
-                <div class="nav-text-footer">Crowdfunding</div>
-              </a>
+              {{menu('footertools','menu.footer')}}
             </div>
           </div>
           <div>
             <div>
-              <h3 class="footer-title">Wettelijke informatie<br/></h3></div>
+              <h3 class="footer-title">Полезная информация<br/></h3></div>
             <div class="top-margin more verical">
-              <a href="av-coop.html" class="navlink w-inline-block"></a>
-              <a href="https://uploads-ssl.webflow.com/5f7ea94782a7b99c39f34980/623486007293d89903d23bd9_Financial%20Report%202021%20Choice%20publiction%20version.pdf" target="_blank" class="navlink w-inline-block">
-                <div class="nav-text-footer">Choice NV - Financial Report 2021 </div>
-              </a>
-              <a href="https://uploads-ssl.webflow.com/5f7ea94782a7b99c39f34980/60f05a273620696fd7bff26e_CHOICE%20NV%20-%20jaarrekening%202020.pdf" target="_blank" class="navlink w-inline-block">
-                <div class="nav-text-footer">Choice NV - goedgekeurde jaarrekening 2020</div>
-              </a>
-              <a href="https://uploads-ssl.webflow.com/5f7ea94782a7b99c39f34980/6042303fe090a1a7c4572363_Choice%20NV%20-%20Listing%20Nota.pdf" target="_blank" class="navlink w-inline-block">
-                <div class="nav-text-footer">Choice NV - Listing Nota</div>
-              </a>
-              <a href="https://uploads-ssl.webflow.com/5f7ea94782a7b99c39f34980/604b6ddc294a814fc2c49d8e_Statuten%20Choice%20NV.pdf" class="navlink w-inline-block">
-                <div class="nav-text-footer">Choice NV Statuten</div>
-              </a>
-              <a href="https://uploads-ssl.webflow.com/5f7ea94782a7b99c39f34980/604230ba6de4af340ab70a77_Choice%20Trust%20Info%20Nota%20en%20Aanvulling.pdf" class="navlink w-inline-block"></a>
-              <a href="https://uploads-ssl.webflow.com/5f7ea94782a7b99c39f34980/604b6ddcfe8447d33d7fc15a_Choice%20Trust%20Certification%20Agreement.pdf" class="navlink w-inline-block"></a>
-              <a href="https://uploads-ssl.webflow.com/5f7ea94782a7b99c39f34980/604b6ddcfe8447d33d7fc15a_Choice%20Trust%20Certification%20Agreement.pdf" class="navlink w-inline-block"></a>
+              {{menu('footerinfo','menu.footer')}}
             </div>
           </div>
         </div>
@@ -103,11 +74,11 @@
                 <a href="https://www.linkedin.com/company/choicetv-be/" target="_blank" class="social-icon dark w-inline-block"><img src="https://uploads-ssl.webflow.com/5f7ea94782a7b99c39f34980/5f8fcc5532ecf35ffc236d46_linkedin.svg" width="16" alt="" /></a>
               </div>
               <div class="div-block-4">
-                <div class="nav-text-footer"><a href="disclaimer.html" class="link-3 this">Disclaimer</a></div>
-                <div class="nav-text-footer"><a href="tou.html" class="link-3 this">Terms of Use</a><span> </span>
+                <div class="nav-text-footer"><a href="/disclaimer" class="link-3 this">Disclaimer</a></div>
+                <div class="nav-text-footer"><a href="/tou" class="link-3 this">Terms of Use</a><span> </span>
                   <a href="https://www.choice.be/tou"> </a>
                 </div>
-                <div class="nav-text-footer"><a href="privacy-policy.html" class="link-3"> Privacy Policy</a></div>
+                <div class="nav-text-footer"><a href="/privacy-policy" class="link-3">Политика конфиденциальности</a></div>
               </div>
             </div>
           </div>

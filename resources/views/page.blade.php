@@ -1,7 +1,7 @@
 @extends('layouts.app')
-@section('title', $post->title)
-@section('description', $post->meta_description)
-@section('keywords', $post->meta_keywords)
+@section('title', $page->title)
+@section('description', $page->meta_description)
+@section('keywords', $page->meta_keywords)
 @section('content')
 <div class="banner-fixed-height">
   <div data-animation="default" class="navbar w-nav" data-easing2="ease" data-easing="ease" data-collapse="medium" data-w-id="ab3d6dd9-2604-1cb1-fff6-edda379048ae" role="banner" data-no-scroll="1" data-duration="400" data-doc-height="1">
@@ -25,25 +25,19 @@
     <div>
       <div class="sub-grid in-blog-post">
         <div id="w-node-_599ffb83-6bb0-3ce1-757d-2a1d1fb2a6a4-8d708b6b" class="algin-center">
-          <h1 class="heading-banner sub-heading in-blog-post">{!!$post->title!!}</h1></div>
+          <h1 class="heading-banner sub-heading in-blog-post">{!!$page->title!!}</h1></div>
       </div>
     </div>
   </div>
 </div>
 <div class="section">
   <div class="container w-container">
-    <div class="legal-wrapper">
-      <div>
-        <div>
           <div class="blog-image"><img src="analyse-van-de-risicos-voor-choice-nv-bij-het-faillissement-van-de-alpha-11-belgium-groep-die-geen-deel-uit-maakt-van-de-choice-groep.html" alt="" class="image-100 w-dyn-bind-empty" /></div>
           <div class="top-margin more">
             <div class="w-richtext">
-              {!!$post->body!!}
+              {!!$page->body!!}
             </div>
           </div>
-        </div>
-      </div>
-    </div>
   </div>
 </div>
 @endsection
