@@ -35,11 +35,9 @@
       <div class="container w-container">
         <div class="footer-gird">
           <div class="footer-column">
-            <h3 class="footer-title">Choice NV</h3>
-            <p class="paragraph-3">Geldenaaksevest 2
-              <br/>3000 Leuven
-              <br/>BE 0748.659.757
-              <br/>
+            <h3 class="footer-title">{{ config('app.name', 'Laravel') }}</h3>
+            <p class="paragraph-3">
+                {!!setting('glavnaya.left-footer')!!}
             </p>
           </div>
           <div>
@@ -74,10 +72,10 @@
                 <a href="https://www.linkedin.com/company/choicetv-be/" target="_blank" class="social-icon dark w-inline-block"><img src="https://uploads-ssl.webflow.com/5f7ea94782a7b99c39f34980/5f8fcc5532ecf35ffc236d46_linkedin.svg" width="16" alt="" /></a>
               </div>
               <div class="div-block-4">
-                <div class="nav-text-footer"><a href="/disclaimer" class="link-3 this">Disclaimer</a></div>
+                <!-- <div class="nav-text-footer"><a href="/disclaimer" class="link-3 this">Disclaimer</a></div>
                 <div class="nav-text-footer"><a href="/tou" class="link-3 this">Terms of Use</a><span> </span>
                   <a href="https://www.choice.be/tou"> </a>
-                </div>
+                </div> -->
                 <div class="nav-text-footer"><a href="/privacy-policy" class="link-3">Политика конфиденциальности</a></div>
               </div>
             </div>

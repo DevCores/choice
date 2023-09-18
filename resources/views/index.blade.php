@@ -9,7 +9,7 @@
         <div class="div-block this"></div>
         <div class="banner-grid">
           <div class="algin-center">
-            <h1 data-w-id="96a251c8-0bd7-19e8-c9c3-b7e1c92f1bb4" style="opacity:0;-webkit-transform:translate3d(0, 30PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 30PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 30PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 30PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="heading-banner"><strong class="bold-text-8">Jouw persoonlijke tv-gids</strong><br/></h1></div>
+            <h1 class="heading-banner"><strong class="bold-text-8">{{setting('glavnaya.1-title')}}</strong><br/></h1></div>
         </div>
         <div class="div-block this"><a href="{{setting('glavnaya.1-button-link')}}" target="_blank" class="button color-button align-center w-button">{{setting('glavnaya.1-button')}}</a></div>
         <div class="div-block this">
