@@ -29,14 +29,16 @@
           <div class="algin-center">
             <h1 class="heading-banner"><strong class="bold-text-8">{{setting('glavnaya.1-title')}}</strong><br/></h1></div>
         </div>
+        @if(setting('glavnaya.1-button-link') && setting('glavnaya.1-button'))
         <div class="div-block this"><a href="{{setting('glavnaya.1-button-link')}}" target="_blank" class="button color-button align-center w-button">{{setting('glavnaya.1-button')}}</a></div>
+        @endif
         <div class="div-block this">
           <a href="{{setting('glavnaya.1-button-image-link')}}" class="mediabox w-inline-block"><img src="/storage/{{setting('glavnaya.1-button-image')}}" loading="lazy" width="250" height="250" alt="" /></a>
         </div>
       </div>
       
     </div>
-<div class="section extra-banner">
+    <!-- <div class="section extra-banner">
       <div class="container w-container">
         <div class="top-title-copy">
           <h3 class="top-title-text home"><strong>{{setting('glavnaya.2-title')}}</strong><br/></h3>
@@ -45,7 +47,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
     <div class="section gray">
       <div class="container w-container">
         <div class="top-title-copy">
@@ -56,7 +58,7 @@
             </div>
           </div>
         </div>
-        <div class="w-layout-grid grid-2">
+        <!-- <div class="w-layout-grid grid-2">
           <div>
             <h4 class="heading-14">{{setting('glavnaya.3-video-left-title')}}<br/></h4>
             <a href="{{setting('glavnaya.3-video-left-link')}}" class="mediabox lightbox-link w-inline-block w-lightbox"><img src="/storage/{{setting('glavnaya.3-video-left-image')}}" alt="" sizes="90vw" class="image-radius" />
@@ -69,8 +71,8 @@
               <div class="play"><img src="{{asset('images/das.svg')}}" width="18" alt="" /></div>
             </a>
           </div>
-        </div>
-        <div class="margin-page half">
+        </div> -->
+        <!-- <div class="margin-page half">
           <div class="core-grid-3">
             <div class="core-wrapper">
               <div class="top-margin more">
@@ -91,10 +93,10 @@
               </div>
             </div>
           </div>
-        </div>
+        </div> -->
       </div>
     </div>
-    <div class="section this">
+    <!-- <div class="section this">
       <div class="container w-container">
         <div class="top-title-copy">
           <div class="rich-text-wrapper">
@@ -124,8 +126,8 @@
           </div>
         </div>
       </div>
-    </div>
-    <div class="section">
+    </div> -->
+    <!-- <div class="section">
       <div class="container w-container">
         <div class="top-title-copy">
           <h3 class="top-title-text _50"><strong>{{setting('glavnaya.4-title')}}</strong><br/></h3>
@@ -136,7 +138,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
     <div class="section gray home">
       <div class="container w-container">
         <div class="top-title-copy">
