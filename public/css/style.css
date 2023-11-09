@@ -5970,6 +5970,7 @@ figure {
   padding: 140px 5% 0;
   display: flex;
   position: relative;
+  flex-direction: column;
 }
 
 .banner-fixed-height._80 {
