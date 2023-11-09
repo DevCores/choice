@@ -5,17 +5,6 @@
 @section('content')
 <div class="banner">
       <div class="container absolute w-container"></div>
-      <div class="container neg-margin-80 w-container">
-        <div class="div-block this"></div>
-        <div class="banner-grid">
-          <div class="algin-center">
-            <h1 class="heading-banner"><strong class="bold-text-8">{{setting('glavnaya.1-title')}}</strong><br/></h1></div>
-        </div>
-        <div class="div-block this"><a href="{{setting('glavnaya.1-button-link')}}" target="_blank" class="button color-button align-center w-button">{{setting('glavnaya.1-button')}}</a></div>
-        <div class="div-block this">
-          <a href="{{setting('glavnaya.1-button-image-link')}}" class="mediabox w-inline-block"><img src="/storage/{{setting('glavnaya.1-button-image')}}" loading="lazy" width="250" height="250" alt="" /></a>
-        </div>
-      </div>
       <div data-animation="default" class="navbar w-nav" data-easing2="ease" data-easing="ease" data-collapse="medium" data-w-id="ab3d6dd9-2604-1cb1-fff6-edda379048ae" role="banner" data-no-scroll="1" data-duration="400" data-doc-height="1">
         <div class="container flex w-container">
           <div class="main">
@@ -34,6 +23,18 @@
           </div>
         </div>
       </div>
+      <div class="container neg-margin-80 w-container">
+        <div class="div-block this"></div>
+        <div class="banner-grid">
+          <div class="algin-center">
+            <h1 class="heading-banner"><strong class="bold-text-8">{{setting('glavnaya.1-title')}}</strong><br/></h1></div>
+        </div>
+        <div class="div-block this"><a href="{{setting('glavnaya.1-button-link')}}" target="_blank" class="button color-button align-center w-button">{{setting('glavnaya.1-button')}}</a></div>
+        <div class="div-block this">
+          <a href="{{setting('glavnaya.1-button-image-link')}}" class="mediabox w-inline-block"><img src="/storage/{{setting('glavnaya.1-button-image')}}" loading="lazy" width="250" height="250" alt="" /></a>
+        </div>
+      </div>
+      
     </div>
 <div class="section extra-banner">
       <div class="container w-container">
