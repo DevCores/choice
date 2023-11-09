@@ -6352,7 +6352,7 @@ figure {
     height: 80px;
     padding-left: 2%;
     padding-right: 4%;
-    position: absolute;
+    position: relative;
   }
 
   .menu-order {
